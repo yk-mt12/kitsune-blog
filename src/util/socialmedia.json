@@ -1,24 +1,24 @@
 {
   "socialIcons": [
     {
-      "icon": "facebook",
-      "url": "https://www.facebook.com/stackrolecom"
+      "icon": "instagram",
+      "url": "https://instagram.com/kitsune_yk"
     },
     {
-      "icon": "instagram",
-      "url": "https://www.instagram.com/stackrole/"
+      "icon": "twitter",
+      "url": "https://twitter.com/kitsune_yk"
     },
     {
       "icon": "linkedin",
-      "url": "https://in.linkedin.com/company/stackrole"
+      "url": "https://www.linkedin.com/in/yuki-matsuishi-239970220/"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/yk-mt12"
     },
     {
       "icon": "youtube",
-      "url": "https://www.youtube.com/channel/UCc1hYgIP_DzFMMzwLRcbDVQ"
-    },
-    {
-      "icon": "dribbble",
-      "url": "https://dribbble.com/stackrole"
+      "url": "https://www.youtube.com/channel/UCda09m8gx2U4zGPufhloPag/featured"
     }
   ]
 }
