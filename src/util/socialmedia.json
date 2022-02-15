@@ -19,6 +19,10 @@
     {
       "icon": "youtube",
       "url": "https://www.youtube.com/channel/UCda09m8gx2U4zGPufhloPag/featured"
+    },
+    {
+      "icon": "vk",
+      "url": "https://kitsune-yk.tokyo"
     }
   ]
 }
