@@ -1,12 +1,33 @@
 ---
 template: blog-post
-title: About me
+title: はてなブログから移行しました！
 slug: /my-introduction
 date: 2022-02-14T00:00:00.000Z
-description: sdasd
-featuredImage: /assets/avery-klein-c_drtsnboqa-unsplash.jpg
+description: |
+  kitsuneです。はてなブログから移行しました。
+featuredImage: /assets/blog1.png
 ---
+### ブログについて
 
-## About me
+先日ブログをはてなブログから移行しました。移行した経緯としては、3点ほど理由があります。
 
-これはテストです。
+1. 単純に自作ブログが欲しかった。
+2. reactを勉強していて何か作りたかった。
+3. gatsbyにテンプレートやドキュメントが多く作りやすそうだった。
+
+的な感じです。
+このブログもgatsbyテンプレートをもとに、少し修正を加えたものとなっています。
+
+### ブログの使い方
+このブログでは、主に
+- プログラミングや英語などその他学んだこと。
+- 日常の思ったこと
+- メモがわり
+
+などなど気ままに更新できたらと思います。暇つぶしくらいに見てもらえたらありがたいです。<br>
+また、何かブログに書いてほしいとかあればcontactのフォームに送ってもらえれば、取り上げるかもしれません。(スパムメールなどはやめて下さい。特定できるので。。)<br>
+
+### 最後に
+[twitter](https://twitter.com/kitsune_yk)もやっているので軽率にフォローください。
+[ポートフォリオ](https://kitsune-yk.tokyo)もよければご覧ください。(おそらくそのうち移行予定)
+
