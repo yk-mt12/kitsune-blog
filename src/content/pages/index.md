@@ -1,12 +1,12 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+title: Kitsune Blog
+tagline: College Students
+featuredImage: /assets/my-hero-image.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
 ---
 
-He is a award winning gaming graphic designer, based in sunny side of California. Working as Principal designer at Bethesda
+I am a second year student at Kyoto Sangyo University. And I am majoring in Computer Science.
