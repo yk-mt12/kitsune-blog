@@ -6,4 +6,6 @@ title: Get in touch
 
 
 
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/kitsune_yk)
+Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/kitsune_yk)<br>
+※ Please refrain from spamming and other annoying activities.
+
