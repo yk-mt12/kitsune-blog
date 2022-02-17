@@ -2,7 +2,7 @@
   "meta": {
     "title": "Kitsune Blog",
     "titleTemplate": "%s",
-    "description": "This is Kitsune Blog, I'll be posting daily records, thoughts, and things I've learned such as programming and English.",
+    "description": "大学生の「kitsune」です。\n日々の思ったことや出来事、学んだことなどを投稿しています。",
     "siteUrl": "https://kitsune-blog.tokyo",
     "image": "/assets/logo.png",
     "iconimage": "/assets/logo.png",
