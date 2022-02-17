@@ -3,8 +3,8 @@ template: about-page
 slug: /about
 title: About Me
 ---
-現在は、コンピュータサイエンスを専攻しています。
-また、React.jsに興味があります。
+京都の大学生2年です。大学では、コンピュータサイエンスを専攻しています。
+現在は、主にWeb開発に興味があり、React.jsを勉強しています。
 
 ![Coffee and programming](/assets/about-page.jpeg "Coffee and Programming")
 
