@@ -3,9 +3,5 @@ template: contact-page
 slug: /contact
 title: Get in touch
 ---
-
-
-
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/kitsune_yk)<br>
-※ Please refrain from spamming and other annoying activities.
-
+ブログに関しての質問、コンタクトは下記のフォームもしくは、[Twitter](https://twitter.com/kitsune_yk)からどうぞ。<br>
+※ スパムや迷惑メールはご遠慮ください。
