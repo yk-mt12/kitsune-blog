@@ -1,10 +1,6 @@
 {
   "socialIcons": [
     {
-      "icon": "instagram",
-      "url": "https://instagram.com/kitsune_yk12"
-    },
-    {
       "icon": "twitter",
       "url": "https://twitter.com/kitsune_yk"
     },
@@ -17,11 +13,7 @@
       "url": "https://github.com/yk-mt12"
     },
     {
-      "icon": "youtube",
-      "url": "https://www.youtube.com/channel/UCda09m8gx2U4zGPufhloPag/featured"
-    },
-    {
-      "icon": "vk",
+      "icon": "rss",
       "url": "https://kitsune-yk.tokyo"
     }
   ]
