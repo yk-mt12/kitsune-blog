@@ -3,18 +3,19 @@ template: about-page
 slug: /about
 title: About Me
 ---
-
-I am a second year student at Kyoto Sangyo University.
-And I am majoring in Computer Science.<br>
-Also, I am interested in web technologies. Especially, I like PHP and Wordpress. Now I'm studying React.js, Laravel etc.
+現在は、コンピュータサイエンスを専攻しています。
+また、React.jsに興味があります。
 
 ![Coffee and programming](/assets/about-page.jpeg "Coffee and Programming")
 
-### HOBBY
+### 趣味
 - Coffee<br>
-   I like to drip coffee and drink it.If you have any recommendations for coffee beans or drip equipment, please let me know.
-- Photo<br>
-   I like to take pictures. Also, I'll post some of the pictures I took on this blog, so please take a look.
-- Soccer & Futsal<br>
-   I've been playing soccer since I was five years old. I also play futsal as a hobby now. I also play street soccer, and in 2020 I participated in a national tournament.
+   おすすめのドリッパーやカフェなどありましたら教えてください！
+- Camera<br>
+   LUMIX DMC-gx1, Sony Cyber-shot DSC-RX100<br>良い写真が撮れたら、このブログにも投稿していくつもりです
 
+- Soccer & Futsal<br>
+   ずっとサッカーをやってました。今は趣味でフットサルをしています。ストリートサッカーとかもやってました。
+
+- Movie<br>
+ Netflixの「You - 君がすべて」「Breaking Bad」はおすすめです。
