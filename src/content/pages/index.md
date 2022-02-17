@@ -2,11 +2,11 @@
 template: index-page
 slug: /
 title: Kitsune Blog
-tagline: College Students
+tagline: Personal blog
 featuredImage: /assets/my-hero-image.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
 ---
-
-I am a second year student at Kyoto Sangyo University. And I am majoring in Computer Science.
+京都の大学生です。
+このブログでは、日々の思ったことや、学んだことを日記的に投稿していきます。
