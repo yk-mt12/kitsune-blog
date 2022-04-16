@@ -16,6 +16,3 @@ title: About Me
 
 - Soccer & Futsal<br>
    ずっとサッカーをやってました。今は趣味でフットサルをしています。ストリートサッカーとかもやってました。
-
-- Movie<br>
- 　Netflixの「You - 君がすべて」「Breaking Bad」はおすすめです。他にもおすすめなどありましたら教えてください！
