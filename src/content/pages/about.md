@@ -7,6 +7,13 @@ title: About Me
 京都の大学生3年です。大学では、コンピュータサイエンスを専攻しています。
 現在は、主にWeb開発に興味があり、React.js, Next.jsを勉強しています。
 
+## Links
+- [twitter](https://twitter.com/kitsune_yk)
+- [github](https://github.com/yk-mt12)
+- [はてなブログ](https://kitsune1247.hatenablog.com/)
+- [linkdlin](https://www.linkedin.com/in/kitsune-yk/)
+- [wantedly](https://www.wantedly.com/id/kitsune_yk)
+- [youtube](https://www.youtube.com/channel/UCda09m8gx2U4zGPufhloPag) 
 ## Hobby
 * Coffee<br/>最近カフェラテにハマっています。おすすめの器具や豆があれば教えてください〜
 
