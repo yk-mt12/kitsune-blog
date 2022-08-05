@@ -16,6 +16,14 @@ module.exports = {
   siteMetadata: settings.meta,
   plugins: [
     {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.kitsune-blog.tokyo/",
+        sitemap: "https://www.kitsune-blog.tokyo/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
       resolve: `@isamrish/gatsby-plugin-google-adsense`,
       options: {
         googleAdClientId: "ca-pub-1360067821500263",
