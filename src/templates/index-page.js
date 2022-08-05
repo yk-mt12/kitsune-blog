@@ -196,11 +196,6 @@ const HomePage = ({ data }) => {
   })
   return (
     <Layout>
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1360067821500263"
-        crossorigin="anonymous"
-      ></script>
       <SEO />
       <div className="home-banner grids col-1 sm-2">
         <div>

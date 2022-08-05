@@ -34,11 +34,6 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1360067821500263"
-        crossorigin="anonymous"
-      ></script>
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div

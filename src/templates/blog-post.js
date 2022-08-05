@@ -83,11 +83,6 @@ const Post = ({ data, pageContext }) => {
 
   return (
     <Layout className="page">
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1360067821500263"
-        crossorigin="anonymous"
-      ></script>
       <SEO
         title={frontmatter.title}
         description={
