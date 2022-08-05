@@ -4,8 +4,8 @@
     "titleTemplate": "%s",
     "description": "大学生の「kitsune」です。\n日々の思ったことや出来事、学んだことなどを投稿しています。",
     "siteUrl": "https://kitsune-blog.tokyo",
-    "image": "/assets/logo.png",
-    "iconimage": "/assets/logo.png",
+    "image": "/assets/logo.jpg",
+    "iconimage": "/assets/logo.jpg",
     "twitterUsername": "@kitsune_yk"
   },
   "ga": "G-JJ9T0JE8E5"
