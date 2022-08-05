@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiArrowLeftSLine, RiBugLine, RiSkullLine } from "react-icons/ri"
 
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 import Layout from "../components/layout"
 
 const NotFound = () => (
   <Layout className="not-found-page">
-    <Seo title="Page not found" />
+    <SEO title="Page not found" />
     <div
       className="wrapper"
       style={{

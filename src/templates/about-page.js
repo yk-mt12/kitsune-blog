@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {
@@ -22,7 +22,7 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout className="page">
-      <Seo title={frontmatter.title} description={excerpt} />
+      <SEO title={frontmatter.title} description={excerpt} />
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: html }} />

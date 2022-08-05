@@ -23,7 +23,7 @@ import { FaWordpress, FaVk } from "react-icons/fa"
 
 import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 import Icons from "../util/socialmedia.json"
 
 export const pageQuery = graphql`
@@ -196,7 +196,7 @@ const HomePage = ({ data }) => {
   })
   return (
     <Layout>
-      <Seo />
+      <SEO />
       <div className="home-banner grids col-1 sm-2">
         <div>
           <h1 className="title">{frontmatter.title}</h1>

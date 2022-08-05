@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import SEO from "../components/seo"
 
 const styles = {
   "article blockquote": {
@@ -83,7 +83,7 @@ const Post = ({ data, pageContext }) => {
 
   return (
     <Layout className="page">
-      <Seo
+      <SEO
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
@@ -95,7 +95,7 @@ const Post = ({ data, pageContext }) => {
         <header className="featured-banner">
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
+            <time sx={{ color: "muted" }}>{frontmatter.date}</time>
           </section>
           {Image ? (
             <GatsbyImage
