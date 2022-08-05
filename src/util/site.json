@@ -2,7 +2,7 @@
   "meta": {
     "title": "Kitsune Blog",
     "titleTemplate": "%s",
-    "description": "大学生の「kitsune」です。\n日々の思ったことや出来事、学んだことなどを投稿しています。",
+    "description": "大学生の「kitsune」です。\n日々の思ったことや出来事、学んだことなどを投稿しています。\n\n[はてなブログ](https://kitsune1247.hatenablog.com/)でもブログを書いています。",
     "siteUrl": "https://kitsune-blog.tokyo",
     "image": "/assets/logo.jpg",
     "iconimage": "/assets/logo.jpg",
