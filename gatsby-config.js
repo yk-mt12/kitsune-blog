@@ -16,6 +16,13 @@ module.exports = {
   siteMetadata: settings.meta,
   plugins: [
     {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: "1360067821500263",
+        head: false, // Optional
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/assets/`,
@@ -91,9 +98,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds :[
-          process.env.GOOGLE_ANALYTICS_ID,
-        ],
+        trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
       },
     },
     `gatsby-plugin-sitemap`,
