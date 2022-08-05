@@ -8,6 +8,6 @@ cta:
   ctaText: Know more
   ctaLink: /about
 ---
-京都の大学生です。
+京都の大学生です。Web開発とSNSマーケティングをしています。
 このブログでは、日々の思ったことや、学んだことを日記的に投稿していきます。<br/>
-[ポートフォリオ](https://kitsune-yk.tokyo)はこちら。 
+ポートフォリオは[こちら。](https://kitsune-yk.tokyo) 
