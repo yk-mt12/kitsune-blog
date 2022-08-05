@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Kitsune Blog
 tagline: Personal blog
-featuredImage: /assets/kitsune_profile.jpg
+featuredImage: /assets/kitsune-new-profile.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
