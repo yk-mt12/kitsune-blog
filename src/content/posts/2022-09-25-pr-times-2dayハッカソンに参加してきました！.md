@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: pr times 2dayハッカソンに参加してきました！
+title: 初めてのハッカソン ~PR TIMES 2day Hackathon~
 slug: /prtimes-hackathon
 date: 2022-09-25 16:32
 description: PR TIMES HACKATHON 2022 Summerの参加記です！
