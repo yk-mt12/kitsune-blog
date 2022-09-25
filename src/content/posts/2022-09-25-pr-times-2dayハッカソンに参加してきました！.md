@@ -6,7 +6,6 @@ date: 2022-09-25 16:32
 description: PR TIMES HACKATHON 2022 Summerの参加記です！
 featuredImage: ""
 ---
-今回、[PR TIMES HACKATHON 2022 Summer](https://prtimes.jp/main/html/rd/p/000001195.000000112.html)
 
 
 ## 全てが初めての体験
