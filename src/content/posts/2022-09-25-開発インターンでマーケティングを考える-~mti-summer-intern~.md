@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: エンジニアリング × マーケティングが楽しい & 学びだった件 ~エムティーアイ Summer Intern 2022~
+title: エンジニアリング × マーケティングを体験してきた ~エムティーアイ Summer Intern 2022~
 slug: /mti-summer-internship
 date: 2022-09-25 22:44
 description: |-
