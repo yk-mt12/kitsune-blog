@@ -13,7 +13,7 @@ featuredImage: /assets/2.png
 
 最近、研究や就活、アルバイトなどかなり抱えることが多くなってきてパンク気味のkitsuneです。今回は、「MTI Internship Summer 2022」に参加した話を書いていきたいと思います。
 
-MTIさんについてはこちら。ルナルナやmusic.jp, CARADAなどを開発している企業です。
+MTIさんについては[こちら](https://www.mti.co.jp/)。ルナルナやmusic.jp, CARADAなどを開発している企業です。
 
 ## インターン参加前
 
