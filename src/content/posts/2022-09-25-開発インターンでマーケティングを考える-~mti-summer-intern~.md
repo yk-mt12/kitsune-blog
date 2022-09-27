@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: 開発インターンでマーケティングを考える ~MTI Summer Intern~
+title: エンジニアリング × マーケティングがめっちゃ楽しかった件 ~MTI Summer Intern~
 slug: /mti-summer-internship
 date: 2022-09-25 22:44
 description: |-
