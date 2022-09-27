@@ -19,7 +19,7 @@ MTIさんについては[こちら](https://www.mti.co.jp/)。ルナルナやmus
 
 ### MTIさんとの出会い
 
-きっかけは、Wantedlyでのスカウトです。
+きっかけは、[Wantedly](https://www.wantedly.com/id/kitsune_yk)でのスカウトです。
 
 ### 参加理由
 
