@@ -3,7 +3,9 @@ template: blog-post
 title: 初めてのハッカソン ~PR TIMES 2day Hackathon~
 slug: /prtimes-hackathon
 date: 2022-09-25 16:32
-description: PR TIMES HACKATHON 2022 Summerの参加記です！
+description: |-
+  PR TIMES HACKATHON 2022 Summerの参加記です！
+  初めてのハッカソンで全てが新鮮でしたがめっちゃ楽しかったです！！
 featuredImage: /assets/img_1664091443.png
 ---
 
