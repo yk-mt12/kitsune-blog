@@ -41,8 +41,11 @@ title: About Me
 
 ## Engineer Community【あまてく】
 
-- 代表
+- サークル名：あまてく
+    - アマチュア集団がてくてく（tech tech）地道に高みに上り詰めてほしいという意味があります。
+- 役割：代表
 - 初学者やプログラミングに興味のある学生が、エンジニアになるきっかけやプログラミングに触れるきっかけになればと設立を決意。
+- 公式Twitter：[@amatech1006](https://twitter.com/amatech1006)
 
 ## Programing
 
