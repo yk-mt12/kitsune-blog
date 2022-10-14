@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
-
+import Adsense from "./GoogleAdsense"
 import PostCard from "./post-card"
 
 export default function BlogListHome(props) {
@@ -34,5 +34,6 @@ const PostMaker = ({ data }) => (
         <RiArrowRightSLine />
       </span>
     </Link>
+    <Adsense />
   </section>
 )

@@ -47,9 +47,11 @@
     "node-sass": "^7.0.1",
     "prismjs": "^1.27.0",
     "react": "^16.14.0",
+    "react-adsense": "^0.1.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
+    "rehype-react": "^7.1.1",
     "sass": "^1.49.7",
     "theme-ui": "^0.6.2"
   },
