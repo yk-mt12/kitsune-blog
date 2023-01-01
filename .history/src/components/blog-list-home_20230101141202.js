@@ -33,5 +33,6 @@ const PostMaker = ({ data }) => (
         <RiArrowRightSLine />
       </span>
     </Link>
+    <Adsense />
   </section>
 )

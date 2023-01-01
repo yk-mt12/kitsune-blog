@@ -44,6 +44,7 @@ const Layout = ({ children, className, props }) => {
         </div>
       </Header>
       <main className={"container " + className}>{children}</main>
+      <Adsense />
       <Footer />
     </div>
   )

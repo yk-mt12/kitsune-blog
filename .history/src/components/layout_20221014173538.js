@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Logo from "./logo"
 import Navigation from "./navigation"
+import Adsense from "./GoogleAdsense"
 
 import "../assets/scss/style.scss"
 import Footer from "./footer"
@@ -44,6 +45,7 @@ const Layout = ({ children, className, props }) => {
         </div>
       </Header>
       <main className={"container " + className}>{children}</main>
+      <Adsense />
       <Footer />
     </div>
   )
