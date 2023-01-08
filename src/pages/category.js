@@ -9,9 +9,9 @@ import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import Seo from "../components/seo"
 import Layout from "../components/layout"
-import { Tag } from "../components/tag"
+import { Category } from "../components/category"
 
-const TagsPage = ({
+const CategoriesPage = ({
   data: {
     allMarkdownRemark: { group },
     site: {
@@ -23,17 +23,18 @@ const TagsPage = ({
     <Helmet title={title} />
     <Layout>
       <Seo title={title} />
-      <h1>Tags</h1>
-      {group.map(tag => (
-        <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-          <Tag tag={`${tag.fieldValue} (${tag.totalCount})`} />
+      <h1>Category</h1>
+      {group.map(category => (
+        <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
+          <Category category={`${category.fieldValue} (${category.totalCount})`} />
         </Link>
+
       ))}
     </Layout>
   </div >
 )
 
-TagsPage.propTypes = {
+CategoriesPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       group: PropTypes.arrayOf(
@@ -51,7 +52,7 @@ TagsPage.propTypes = {
   }),
 }
 
-export default TagsPage
+export default CategoriesPage
 
 export const pageQuery = graphql`
   query {
@@ -61,7 +62,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+      group(field: frontmatter___category) {
         fieldValue
         totalCount
       }

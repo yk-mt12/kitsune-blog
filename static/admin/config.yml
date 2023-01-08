@@ -54,6 +54,11 @@ collections:
           required: false
         }
       - {
+          label: "Category",
+          name: "category",
+          widget: "text"
+        }
+      - {
           label: "Tags",
           name: "tags",
           widget: "list"
