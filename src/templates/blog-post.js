@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Tag } from "../components/tag"
 import { Category } from "../components/category"
+import { ShareSns } from "../components/share-sns"
 
 const styles = {
   "article blockquote": {
@@ -90,24 +91,11 @@ const Post = ({ data, pageContext }) => {
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={Image}
+        image={Image.images.fallback.src}
         article={true}
       />
       <article className="blog-post">
         <header className="featured-banner">
-          <section className="article-header">
-            <h1>{frontmatter.title}</h1>
-            <time sx={{ color: "muted" }}>{frontmatter.date}</time>
-            <h2>
-              {frontmatter.category}
-            </h2>
-            <div>
-              {frontmatter.tags?.map(tag => {
-                return <Tag tag={tag} />
-              })}
-            </div>
-          </section>
-
           {Image ? (
             <GatsbyImage
               image={Image}
@@ -117,6 +105,21 @@ const Post = ({ data, pageContext }) => {
           ) : (
             ""
           )}
+          <section className="article-header">
+            <h1>{frontmatter.title}</h1>
+            <Category category={frontmatter.category} />
+            <div>
+              {frontmatter.tags?.map(tag => {
+                return <Tag tag={tag} />
+              })}
+            </div>
+              <time sx={{ color: "muted" }}>{frontmatter.date}</time>
+            <div>
+              {typeof window !== 'undefined' && window.location.href &&
+                <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+              }
+            </div>
+          </section>
         </header>
 
         <div
