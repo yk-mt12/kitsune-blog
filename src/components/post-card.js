@@ -3,6 +3,8 @@ import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
+import { Tag } from "./tag"
+
 const PostCard = ({ data }) => (
   <article
     className="post-card"
@@ -40,6 +42,9 @@ const PostCard = ({ data }) => (
       >
         <time>{data.frontmatter.date}</time>
       </p>
+      {data?.frontmatter.tags?.map(tag => {
+        return <Tag tag={tag} />
+      })}
     </div>
   </article>
 )
