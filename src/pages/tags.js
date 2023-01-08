@@ -11,8 +11,6 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { Tag } from "../components/tag"
 
-
-
 const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
