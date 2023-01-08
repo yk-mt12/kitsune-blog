@@ -7,6 +7,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Tag } from "../components/tag"
+import { Category } from "../components/category"
 import { ShareSns } from "../components/share-sns"
 
 const styles = {
@@ -95,9 +96,6 @@ const Post = ({ data, pageContext }) => {
       />
       <article className="blog-post">
         <header className="featured-banner">
-          {
-            console.log(Image.images.fallback.src)
-          }
           {Image ? (
             <GatsbyImage
               image={Image}
@@ -109,20 +107,19 @@ const Post = ({ data, pageContext }) => {
           )}
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
-            <time sx={{ color: "muted" }}>{frontmatter.date}</time>
-            <h2>
-              {frontmatter.category}
-            </h2>
+            <Category category={frontmatter.category} />
             <div>
               {frontmatter.tags?.map(tag => {
                 return <Tag tag={tag} />
               })}
             </div>
+              <time sx={{ color: "muted" }}>{frontmatter.date}</time>
+            <div>
+              {typeof window !== 'undefined' && window.location.href &&
+                <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+              }
+            </div>
           </section>
-          {typeof window !== 'undefined' && window.location.href &&
-            <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
-          }
-
         </header>
 
         <div

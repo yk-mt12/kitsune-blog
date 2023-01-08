@@ -1,4 +1,5 @@
 import React from "react"
+import styled from 'styled-components'
 import {
   TwitterIcon,
   TwitterShareButton,
@@ -12,28 +13,45 @@ import {
   LinkedinIcon
 } from "react-share"
 
+
 export const ShareSns = ({ articleUrl, articleTitle }) => (
-  <div className={'ShareSns'}>
-    <div>
-      <HatenaShareButton url={articleUrl} quote={articleTitle}>
-        <HatenaIcon size={32} round={true} />
+  <SBlock>
+    <SButton>
+      <HatenaShareButton url={articleUrl} title={articleTitle}>
+        <HatenaIcon size={40} round={true} />
       </HatenaShareButton>
+    </SButton>
+    <SButton>
 
-      <FacebookShareButton url={articleUrl}>
-        <FacebookIcon size={32} round={true} />
+      <FacebookShareButton url={articleUrl} title={articleTitle}>
+        <FacebookIcon size={40} round={true} />
       </FacebookShareButton>
-
-      <LineShareButton url={articleUrl}>
-        <LineIcon size={32} round={true} />
+    </SButton>
+    <SButton>
+      <LineShareButton url={articleUrl} title={articleTitle}>
+        <LineIcon size={40} round={true} />
       </LineShareButton>
-
-      <LinkedinShareButton url={articleUrl}>
-        <LinkedinIcon title={articleTitle} size={32} round={true} />
+    </SButton>
+    <SButton>
+      <LinkedinShareButton url={articleUrl} tit={articleTitle}>
+        <LinkedinIcon title={articleTitle} size={40} round={true} />
       </LinkedinShareButton>
-
+    </SButton>
+    <SButton>
       <TwitterShareButton title={articleTitle} via="kitsune_yk" url={articleUrl}>
-        <TwitterIcon size={32} round={true} />
+        <TwitterIcon size={40} round={true} />
       </TwitterShareButton>
-    </div>
-  </div>
+    </SButton>
+  </SBlock>
 );
+
+
+const SBlock = styled.div`
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+`
+
+const SButton = styled.div`
+  margin: 8px;
+`
