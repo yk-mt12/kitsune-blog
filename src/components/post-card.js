@@ -2,6 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import kebabCase from "lodash/kebabCase"
 
 import { Tag } from "./tag"
 
@@ -43,7 +44,11 @@ const PostCard = ({ data }) => (
         <time>{data.frontmatter.date}</time>
       </p>
       {data?.frontmatter.tags?.map(tag => {
-        return <Tag tag={tag} />
+        return (
+          <Link to={`/tags/${kebabCase(tag)}/`}>
+            <Tag tag={tag} />
+          </Link>
+        )
       })}
     </div>
   </article>

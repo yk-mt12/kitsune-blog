@@ -27,7 +27,6 @@ const TagsPage = ({
       <Seo title={title} />
       <h1>Tags</h1>
       {group.map(tag => (
-
         <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
           <Tag tag={`${tag.fieldValue} (${tag.totalCount})`} />
         </Link>

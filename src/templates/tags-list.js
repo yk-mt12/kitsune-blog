@@ -20,10 +20,6 @@ const Tags = ({ pageContext, data }) => {
       <p><Link to="/tags">All tags</Link></p>
       <h1>{tagHeader}</h1>
       <div className="grids col-1 sm-2 lg-3">{posts}</div>
-      {/*
-              This links to a page that does not yet exist.
-              You'll come back to it!
-            */}
     </Layout>
   )
 }
