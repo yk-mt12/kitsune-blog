@@ -7,7 +7,6 @@ export const Tag = (props) => {
 
   return (
     <STag
-
     sx= {{
       color: "muted",
       border: "1px solid var(--theme-ui-colors-muted)"
