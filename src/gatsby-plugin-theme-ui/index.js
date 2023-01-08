@@ -65,7 +65,17 @@ const theme = {
         },
       },
     },
-  },
+    tagIcons: {
+      color: "background",
+      backgroundColor: "muted",
+      "&:before": {
+        borderColor: "transparent var(--theme-ui-colors-muted) transparent transparent",
+      },
+      "&:after": {
+        color: "background",
+      },
+    },
+  }
 }
 
 export default theme

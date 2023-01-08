@@ -5,28 +5,29 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostCard from "../components/post-card"
 
-const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
+const Category = ({ pageContext, data }) => {
+  const { category } = pageContext
   const { totalCount } = data.allMarkdownRemark
   const posts = data.allMarkdownRemark.edges
     .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
 
-  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"
-    } tagged with "${tag}"`
+  const categoryHeader = `${totalCount} post${totalCount === 1 ? "" : "s"
+    } tagged with "${category}"`
 
   return (
     <Layout>
-      <p><Link to="/tags">All tags</Link></p>
-      <h1>{tagHeader}</h1>
+      <p><Link to="/category">All Category</Link></p>
+      <h1>{categoryHeader}</h1>
       <div className="grids col-1 sm-2 lg-3">{posts}</div>
     </Layout>
   )
 }
 
-Tags.propTypes = {
+
+Category.propTypes = {
   pageContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
@@ -47,14 +48,14 @@ Tags.propTypes = {
   }),
 }
 
-export default Tags
+export default Category
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query($category: String) {
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { category: { in: [$category] } } }
     ) {
       totalCount
       edges {

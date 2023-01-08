@@ -16,6 +16,10 @@ const MenuItems = [
     title: "Blog",
   },
   {
+    path: "/category",
+    title: "Category",
+  },
+  {
     path: "/tags",
     title: "Tags",
   },

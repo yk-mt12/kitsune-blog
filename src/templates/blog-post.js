@@ -7,6 +7,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Tag } from "../components/tag"
+import { Category } from "../components/category"
 
 const styles = {
   "article blockquote": {
@@ -97,6 +98,9 @@ const Post = ({ data, pageContext }) => {
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
             <time sx={{ color: "muted" }}>{frontmatter.date}</time>
+            <h2>
+              {frontmatter.category}
+            </h2>
             <div>
               {frontmatter.tags?.map(tag => {
                 return <Tag tag={tag} />
@@ -137,6 +141,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        category
         tags
         description
         featuredImage {

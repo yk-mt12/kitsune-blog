@@ -5,6 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import kebabCase from "lodash/kebabCase"
 
 import { Tag } from "./tag"
+import { Category} from "./category"
 
 const PostCard = ({ data }) => (
   <article
@@ -42,6 +43,11 @@ const PostCard = ({ data }) => (
         }}
       >
         <time>{data.frontmatter.date}</time>
+      </p>
+      <p>
+        <Link to={`/category/${kebabCase(data?.frontmatter.category)}/`}>
+          <Category category={data?.frontmatter.category} />
+        </Link>
       </p>
       {data?.frontmatter.tags?.map(tag => {
         return (

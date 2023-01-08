@@ -7,20 +7,35 @@ export const Tag = (props) => {
 
   return (
     <STag
-    sx= {{
-      color: "muted",
-      border: "1px solid var(--theme-ui-colors-muted)"
-    }}
+      sx={{
+        variant: "variants.tagIcons",
+      }}
     >{tag}</STag>
   )
 }
 
 const STag = styled.p`
-  display: inline-block;
-  margin: .6em .6em .6em 0;
-  padding: .6em;
-  line-height: 1;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 2em;
+position: relative;
+display: inline-block;
+margin: 0 .6em .6em .6em;
+padding: .6em .6em .6em 1.2em;
+line-height: 1;
+text-decoration: none;
+font-size: 16px;
+
+&:before {
+	position: absolute;
+	top: 0;
+	left: -1em;
+	content: '';
+	border-width: 1.1em 1em 1.1em 0;
+	border-style: solid;
+}
+
+&:after {
+	position: absolute;
+	top: center;
+	left: 0;
+	content: '●';
+}
 `
