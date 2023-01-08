@@ -6,6 +6,7 @@ date: 2022-02-14T00:00:00.000Z
 description: |
   kitsuneです。はてなブログから移行しました。
 featuredImage: /assets/blog1.png
+category: 日常
 tags:
   - 自己紹介
 ---

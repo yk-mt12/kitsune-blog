@@ -8,6 +8,7 @@ description: |-
   結果は優勝!!
   技術的にも、ビジネス的にも個人的にかなり成長できたインターンでした。
 featuredImage: /assets/2.png
+category: インターンシップ
 tags:
   - Internship
   - Marketing
