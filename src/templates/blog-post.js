@@ -7,7 +7,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Tag } from "../components/tag"
-import { Category } from "../components/category"
+import { ShareSns } from "../components/share-sns"
 
 const styles = {
   "article blockquote": {
@@ -90,11 +90,23 @@ const Post = ({ data, pageContext }) => {
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={Image}
+        image={Image.images.fallback.src}
         article={true}
       />
       <article className="blog-post">
         <header className="featured-banner">
+          {
+            console.log(Image.images.fallback.src)
+          }
+          {Image ? (
+            <GatsbyImage
+              image={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image"
+            />
+          ) : (
+            ""
+          )}
           <section className="article-header">
             <h1>{frontmatter.title}</h1>
             <time sx={{ color: "muted" }}>{frontmatter.date}</time>
@@ -107,16 +119,10 @@ const Post = ({ data, pageContext }) => {
               })}
             </div>
           </section>
+          {typeof window !== 'undefined' && window.location.href &&
+            <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+          }
 
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          ) : (
-            ""
-          )}
         </header>
 
         <div
