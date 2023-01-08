@@ -37,7 +37,6 @@
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-plugin-sitemap": "^3.3.0",
-    "gatsby-plugin-styled-components": "^6.3.0",
     "gatsby-plugin-theme-ui": "^0.6.2",
     "gatsby-remark-images": "^6.7.0",
     "gatsby-remark-prismjs": "^6.7.0",
