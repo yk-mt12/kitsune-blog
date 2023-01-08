@@ -85,6 +85,7 @@ const Pagination = props => (
     </ul>
   </div>
 )
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -99,6 +100,7 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
       .filter(edge => !!edge.node.frontmatter.date)
       .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
+
     let props = {
       isFirst,
       prevPage,
