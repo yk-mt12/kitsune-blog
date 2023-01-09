@@ -123,16 +123,15 @@ const Post = ({ data, pageContext }) => {
             </div>
           </section>
         </header>
-
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <div>
-          {typeof window !== 'undefined' && window.location.href &&
-            <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
-          }
-        </div>
+        {typeof window !== 'undefined' && window.location.href &&
+          <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+        }
+      </div>
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
