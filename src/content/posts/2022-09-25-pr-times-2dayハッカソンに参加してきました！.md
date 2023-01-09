@@ -7,7 +7,7 @@ description: |-
   PR TIMES HACKATHON 2022 Summerの参加記です！
   初めてのハッカソンで全てが新鮮でしたがめっちゃ楽しかったです！！
 featuredImage: /assets/img_1664091443.png
-category: 技術
+category: Programming
 tags:
   - Hackathon
   - ハッカソン
