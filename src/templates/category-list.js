@@ -13,7 +13,7 @@ const Category = ({ pageContext, data }) => {
     .map(edge => <PostCard key={edge.node.id} data={edge.node} />)
 
   const categoryHeader = `${totalCount} post${totalCount === 1 ? "" : "s"
-    } tagged with "${category}"`
+    } categorized with "${category}"`
 
   return (
     <Layout>
