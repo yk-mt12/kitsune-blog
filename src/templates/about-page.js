@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { ShareSns } from "../components/share-sns"
 
 export const pageQuery = graphql`
   query AboutQuery($id: String!) {
@@ -26,6 +27,11 @@ const AboutPage = ({ data }) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: html }} />
+        <div>
+          {typeof window !== 'undefined' && window.location.href &&
+            <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+          }
+        </div>
       </div>
     </Layout>
   )
