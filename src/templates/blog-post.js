@@ -115,7 +115,7 @@ const Post = ({ data, pageContext }) => {
                 return <Tag tag={tag} />
               })}
             </div>
-              <time sx={{ color: "muted" }}>{frontmatter.date}</time>
+            <time sx={{ color: "muted" }}>{frontmatter.date}</time>
             <div>
               {typeof window !== 'undefined' && window.location.href &&
                 <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
@@ -128,6 +128,11 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <div>
+          {typeof window !== 'undefined' && window.location.href &&
+            <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+          }
+        </div>
       </article>
       {(previous || next) && <Pagination {...props} />}
     </Layout>
