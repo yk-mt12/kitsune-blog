@@ -77,12 +77,14 @@ const Post = ({ data, pageContext }) => {
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
+  const seoImage = Image ? Image.images.fallback.src : ""
   const { previous, next } = pageContext
 
   let props = {
     previous,
     next,
   }
+
 
   return (
     <Layout className="page">
@@ -91,7 +93,7 @@ const Post = ({ data, pageContext }) => {
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        image={Image.images.fallback.src}
+        image={seoImage}
         article={true}
       />
       <article className="blog-post">
