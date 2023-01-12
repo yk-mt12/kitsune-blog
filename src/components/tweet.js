@@ -12,7 +12,7 @@ export const TweetTimeline = () => {
         }}
         options={{
           height: '600',
-          width: '80%'
+          width: '100%'
         }}
       />
     </STimeline>
@@ -20,6 +20,5 @@ export const TweetTimeline = () => {
 }
 
 const STimeline = styled.div`
-  margin: '0 auto',
-  text-align: center;
+margin: 8px 20%;
 `
