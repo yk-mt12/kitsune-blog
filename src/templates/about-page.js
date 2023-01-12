@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { TweetTimeline } from '../components/tweet'
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -27,6 +28,7 @@ const AboutPage = ({ data }) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: html }} />
+        <TweetTimeline />
         <div>
           {typeof window !== 'undefined' && window.location.href &&
             <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
