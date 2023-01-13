@@ -1,49 +1,15 @@
-name: Create release tag and release note.
-
-on:
-  push:
-    branches: [ master ]
-
-jobs:
-  create-release-tag:
-    runs-on: ubuntu-latest
-
-    env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      TZ: 'Asia/Tokyo'
-
-    steps:
-      - uses: actions/checkout@v2
-
-      # 前回のりリースタグを取得する
-      - name: Get previous tag
-        id: pre_tag
-        run: |
-          echo "::set-output name=pre_tag::$(curl -H 'Accept: application/vnd.github.v3+json' -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' https://api.github.com/repos/${{ github.repository }}/releases/latest | jq -r .tag_name)"
-
-      # タグを生成する 「{YYYY.MM.DD}-{当日リリース回数}」
-      - name: Generate release tag
-        id: release_tag
-        run: |
-          today=$(date +'%Y.%m.%d')
-          pre_release_date=$(echo ${{ steps.pre_tag.outputs.pre_tag }} | awk -F'-' '{print $1}')
-          pre_release_count=$(echo ${{ steps.pre_tag.outputs.pre_tag }} | awk -F'-' '{print $2}')
-          if [[ ! $pre_release_date = $today ]]; then
-            echo "init count"
-            pre_release_count=0
-          fi
-          echo "::set-output name=release_tag::$today-$(($pre_release_count + 1))"
-
-      # 前回リリースからの差分をもとに、リリースノートの本文を生成する
-      - name: Generate release note
-        id: release_note
-        run: |
-          echo "::set-output name=release_note::$(curl -X POST -H 'Accept: application/vnd.github.v3+json' -H 'Authorization: token ${{ secrets.GITHUB_TOKEN }}' https://api.github.com/repos/${{ github.repository }}/releases/generate-notes -d '{"tag_name":"${{ steps.release_tag.outputs.release_tag }}", "previous_tag_name":"${{ steps.pre_tag.outputs.pre_tag }}"}' | jq .body | sed 's/"//g')"
-
-      # タグを切り、リリースノートを作成する
-      - name: Create Release
-        run: |
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -d "{ \"tag_name\": \"${{ steps.release_tag.outputs.release_tag }}\", \"name\": \"${{ steps.release_tag.outputs.release_tag }}\", \"body\": \"${{ steps.release_note.outputs.release_note }}\"}" \
-            https://api.github.com/repos/${{ github.repository }}/releases
+changelog:
+  exclude:
+    # リリースノートから除外したいユーザー
+    authors:
+      - github-actions
+  categories:
+    - title: New Features 🎉
+      labels:
+        - "enhancement"
+    - title: Bug Fix 💊
+      labels:
+        - "bug"
+    - title: Other Changes 🛠
+      labels:
+        - "*"
