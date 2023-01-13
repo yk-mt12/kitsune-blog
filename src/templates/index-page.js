@@ -25,6 +25,7 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
+import TypingEffect from "../components/typing-effect"
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -212,6 +213,7 @@ const HomePage = ({ data }) => {
           >
             {frontmatter.tagline}
           </p>
+          <TypingEffect />
           <div
             className="description"
             dangerouslySetInnerHTML={{ __html: html }}
