@@ -20,5 +20,5 @@ export const TweetTimeline = () => {
 }
 
 const STimeline = styled.div`
-margin: 8px 20%;
+margin: 8px 5%;
 `

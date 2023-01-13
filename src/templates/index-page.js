@@ -26,6 +26,8 @@ import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
 import TypingEffect from "../components/typing-effect"
+import { ShareSns } from "../components/share-sns"
+import styled from "styled-components"
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -252,8 +254,22 @@ const HomePage = ({ data }) => {
         </div>
       </div>
       <BlogListHome data={posts} />
+      <SShareSNS>
+        <SShareSNSTitle>Share SNS</SShareSNSTitle>
+        {typeof window !== 'undefined' && window.location.href &&
+          <ShareSns articleUrl={window.location.href} articleTitle={frontmatter.title} />
+        }
+      </SShareSNS>
     </Layout>
   )
 }
 
 export default HomePage
+
+const SShareSNS = styled.div`
+  margin: 0 0 100px;
+`
+
+const SShareSNSTitle = styled.h2`
+text-align: center;
+`
