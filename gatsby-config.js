@@ -3,6 +3,12 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const path = require('path');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 const netlifyCmsPaths = {
   resolve: `gatsby-plugin-netlify-cms-paths`,
   options: {
@@ -19,7 +25,7 @@ module.exports = {
       resolve: 'gatsby-source-microcms',
       options: {
         apiKey: process.env.MICROCMS_API_KEY,
-        serviceId: 'kitsune-techblog',
+        serviceId: 'kitsuneblog',
         apis: [
           {
             endpoint: 'news',
