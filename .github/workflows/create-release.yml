@@ -1,5 +1,5 @@
 name: Automatically labeling pull request.
-# テスト
+
 on:
   pull_request:
     types: [opened]
