@@ -10,6 +10,7 @@ jobs:
 
     env:
       GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      TZ: 'Asia/Tokyo'
 
     steps:
       - uses: actions/checkout@v3
@@ -34,19 +35,19 @@ jobs:
         run: |
           number=$(echo $GITHUB_REF | sed -e 's/[^0-9]//g')
           gh pr edit $number --add-label ${{ steps.label_name.outputs.label_name }}
-          
-changelog:
-  exclude:
-    # リリースノートから除外したいユーザー
-    authors:
-      - github-actions # <-- 追加
-  categories:
-    - title: New Features 🎉
-      labels:
-        - "enhancement"
-    - title: Bug Fix 💊
-      labels:
-        - "bug"
-    - title: Other Changes 🛠
-      labels:
-        - "*"
+
+    changelog:
+      exclude:
+        # リリースノートから除外したいユーザー
+        authors:
+          - github-actions # <-- 追加
+      categories:
+        - title: New Features 🎉
+          labels:
+            - "enhancement"
+        - title: Bug Fix 💊
+          labels:
+            - "bug"
+        - title: Other Changes 🛠
+          labels:
+            - "*"
