@@ -3,6 +3,12 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const path = require('path');
+
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 const netlifyCmsPaths = {
   resolve: `gatsby-plugin-netlify-cms-paths`,
   options: {
@@ -16,6 +22,18 @@ module.exports = {
   siteMetadata: settings.meta,
   plugins: [
     {
+      resolve: 'gatsby-source-microcms',
+      options: {
+        apiKey: process.env.MICROCMS_API_KEY,
+        serviceId: 'kitsuneblog',
+        apis: [
+          {
+            endpoint: 'news',
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://www.kitsune-blog.tokyo/",
@@ -26,7 +44,7 @@ module.exports = {
     {
       resolve: `@isamrish/gatsby-plugin-google-adsense`,
       options: {
-        googleAdClientId: "ca-pub-1360067821500263",
+        googleAdClientId: process.env.CA_PUB_GOOGLE_ID,
         head: false, // Optional
       },
     },
@@ -103,12 +121,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
     `gatsby-plugin-netlify-cms`,
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [process.env.GOOGLE_ANALYTICS_ID],
-      },
-    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -121,6 +133,15 @@ module.exports = {
         display: `standalone`,
         icon: "static" + settings.meta.iconimage,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [process.env.GOOGLE_OPTIMIZE_TRACKING_ID],  // 控えておいた、測定IDを記載します。
+        pluginConfig: {
+          head: true  // headタグに記載されるようにコンフィグを設定します。
+        }
+      }
     },
     "gatsby-plugin-offline",
   ],
