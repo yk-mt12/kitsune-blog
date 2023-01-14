@@ -1,32 +1,15 @@
-name: Create Release
-
-on:
-  pull_request:
-    types: [closed]
-    branches:
-      - release
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@master
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.event.pull_request.title }}
-          release_name: ${{ github.event.pull_request.title }}
-          body: ${{ github.event.pull_request.body }}
-          draft: false
-          prerelease: false
-
-      - name: Slack Notification
-        uses: weseek/ghaction-release-slack-notification@master
-        with:
-          channel: '#webev-dev'
-          url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          created_tag: '${{ github.event.pull_request.title }}'
+changelog:
+  exclude:
+    # リリースノートから除外したいユーザー
+    authors:
+      - github-actions # <-- 追加
+  categories:
+    - title: New Features 🎉
+      labels:
+        - "enhancement"
+    - title: Bug Fix 💊
+      labels:
+        - "bug"
+    - title: Other Changes 🛠
+      labels:
+        - "*"
