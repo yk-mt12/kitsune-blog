@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      TZ: 'Asia/Tokyo'
 
     steps:
       - uses: actions/checkout@v3
