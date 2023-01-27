@@ -22,18 +22,6 @@ module.exports = {
   siteMetadata: settings.meta,
   plugins: [
     {
-      resolve: 'gatsby-source-microcms',
-      options: {
-        apiKey: process.env.MICROCMS_API_KEY,
-        serviceId: 'kitsuneblog',
-        apis: [
-          {
-            endpoint: 'news',
-          },
-        ],
-      },
-    },
-    {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://www.kitsune-blog.tokyo/",
