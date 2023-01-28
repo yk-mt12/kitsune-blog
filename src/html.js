@@ -26,7 +26,9 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
+
       </body>
+      <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="kitsuneyk" data-description="Support me on Buy me a coffee!" data-message="支援して頂けると情報発信と個人開発の励みになります！" data-color="#FFDD00" data-position="Right" data-x_margin="12" data-y_margin="12"></script>
     </html>
   )
 }
