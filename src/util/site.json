@@ -2,7 +2,7 @@
   "meta": {
     "title": "Kitsune Blog",
     "titleTemplate": "%s",
-    "description": "エンジニアを目指す大学生の「kitsune」です。\n日々の思ったことや出来事、学んだことなどを投稿しています。",
+    "description": "京都の大学生3年です。大学では、コンピュータサイエンスを専攻。\nエンジニアを目指す大学生の「kitsune」です。\n日々の思ったことや出来事、学んだことなどを投稿しています。\nフロントエンド、特にUI/UXに興味があります。マーケティングの経験なども活かしPMにも興味があります。\n学内のエンジニアコミュニティ「あまてく」を運営。",
     "siteUrl": "https://kitsune-blog.tokyo",
     "image": "/assets/logo.jpg",
     "iconimage": "/assets/logo.jpg",
