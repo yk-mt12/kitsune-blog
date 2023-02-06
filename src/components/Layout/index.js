@@ -2,14 +2,13 @@
 import { jsx } from "theme-ui"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import Logo from "./logo"
-import Navigation from "./navigation"
-
-import "../assets/scss/style.scss"
-import Footer from "./footer"
-import Theme from "../components/theme"
-import Search from "../components/search"
+import "../../assets/scss/style.scss"
+import Header from "../Header"
+import Logo from "../Logo"
+import Navigation from "../Navigation"
+import Footer from "../Footer"
+import Theme from "../Theme"
+import Search from "../Search"
 
 const query = graphql`
   query LayoutQuery {

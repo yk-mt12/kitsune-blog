@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import kebabCase from "lodash/kebabCase"
 
-import { Tag } from "./tag"
-import { Category} from "./category"
+import { Tag } from "../Tag"
+import { Category } from "../Category"
 
 const PostCard = ({ data }) => (
   <article

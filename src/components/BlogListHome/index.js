@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
-import PostCard from "./post-card"
+import PostCard from "../PostCard"
 
 export default function BlogListHome(props) {
   const data = props.data
