@@ -1,0 +1,35 @@
+name: StoryBook Deploy S3[pull_request]
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      API_ENDPOINT: ${{ github.event.issue.pull_request.url }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PULL_REQUEST_NUMBER: ${{ github.event.issue.number }}
+    steps:
+    - id: check
+        # If the comment contains the string deploy-storybook and pull_requrest, then run
+      if: "contains(github.event.comment.body, 'deploy-storybook') && github.event.issue.pull_request"
+      run: |
+        branch=`curl -X GET -H "Authorization: token ${GITHUB_TOKEN}" ${API_ENDPOINT} | jq -r '.head.ref'`
+        echo ::set-output name=branch::$branch
+
+    - name: Checkout
+      if: "steps.check.outputs.branch"
+      uses: actions/checkout@v2
+
+    - name: Setup node
+      if: "steps.check.outputs.branch"
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    - name: Create URL
+      if: "steps.check.outputs.branch"
+      run: |
+        curl -X POST -H "Authorization: token ${GITHUB_TOKEN}" -i ${API_ENDPOINT} -d "`printf '{\"body\":\"deploy to %s\"}' hello/"pr-"${GITHUB_PULL_REQUEST_NUMBER}`"
