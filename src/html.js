@@ -16,6 +16,14 @@ export default function HTML(props) {
           async
           src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6YPG2DY78"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-H6YPG2DY78');
+        </script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
