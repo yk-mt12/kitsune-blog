@@ -29,6 +29,8 @@ tags:
 
 そして、今回私は[エンジニアコミュニティ「あまてく」](https://www.notion.so/9728f0790eb44f4794b8fe531fbde9c7?pvs=21)の代表として参加しました！あまてくは京都産業大学の学生を中心としたエンジニアコミュニティで、ハッカソン出場やチームメンバーの育成など、エンジニアを目指すきっかけになる活動を行っています
 
+
+
 ## 技育博の様子
 
 今回の[技育博](https://prtimes.jp/main/html/rd/p/000000026.000045025.html)は、サポーターズ渋谷オフィスで開催されました。会場にはCyberAgentやDeNA、ゆめみ、といった企業を始め多くの企業が集まり、エネルギーに満ちた空間が広がっていました。まるでエンジニアのフェスティバル！テンション上がりますよね！
@@ -85,8 +87,6 @@ tags:
 
 下のボタンから、コーヒーチップも送ることができます！支援して頂けると、ブログや個人開発の励みになります！
 
-シェアリンクから、ブログのシェアもしてもらえると嬉しいです〜！
+<a href="https://www.buymeacoffee.com/kitsuneyk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-```bash
-
-```
+シェアリンクから、ブログのシェアもしてもらえると励みになります！！
