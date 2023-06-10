@@ -128,7 +128,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: ["G-H6YPG2DY78"],  // 控えておいた、測定IDを記載します。
+        trackingIds: [process.env.GOOGLE_OPTIMIZE_TRACKING_ID],  // 控えておいた、測定IDを記載します。
         pluginConfig: {
           head: true  // headタグに記載されるようにコンフィグを設定します。
         }
